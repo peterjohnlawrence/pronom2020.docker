@@ -1,0 +1,2686 @@
+{
+	"ByteOrder": {
+	"entity": "ByteOrder",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ByteOrders",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ByteOrder",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byte_orders_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteOrder_ByteSequence",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteOrder_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ByteOrder",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ByteOrder",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byte_orders_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteOrder_ByteSequence",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "byteOrder_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ByteSequence": {
+	"entity": "ByteSequence",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ByteSequences",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ByteSequence",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequenceIndirectOffsetLength",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequenceIndirectOffsetLocation",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequenceMaxOffset",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequenceOffset",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequenceValue",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 5,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byte_sequences_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 6,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 7,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "internalSignature_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 8,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 9,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequence_ByteOrder",
+				"propertyVisible": false,
+				"propertyType": "O",
+				"propertyRange": "ByteOrder",
+				"ordinal": 10,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequence_ByteSequencePosition",
+				"propertyVisible": false,
+				"propertyType": "O",
+				"propertyRange": "ByteSequencePosition",
+				"ordinal": 11,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequence_ContainerFile",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerFile",
+				"ordinal": 12,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequence_InternalSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "InternalSignature",
+				"ordinal": 13,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ByteSequence",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ByteSequence",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequenceIndirectOffsetLength",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequenceIndirectOffsetLocation",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequenceMaxOffset",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequenceOffset",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequenceValue",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 5,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byte_sequences_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 6,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 7,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "internalSignature_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 8,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 9,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequence_ByteOrder",
+				"propertyVisible": true,
+				"propertyType": "O",
+				"propertyRange": "ByteOrder",
+				"ordinal": 10,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequence_ByteSequencePosition",
+				"propertyVisible": true,
+				"propertyType": "O",
+				"propertyRange": "ByteSequencePosition",
+				"ordinal": 11,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequence_ContainerFile",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerFile",
+				"ordinal": 12,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "byteSequence_InternalSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "InternalSignature",
+				"ordinal": 13,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ByteSequencePosition": {
+	"entity": "ByteSequencePosition",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ByteSequencePositions",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ByteSequencePosition",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "position_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "byteSequencePosition_ByteSequence",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ByteSequencePosition",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ByteSequencePosition",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "position_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "byteSequencePosition_ByteSequence",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"Classification": {
+	"entity": "Classification",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "Classifications",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "Classification",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "format_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "classification_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "Classification",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "Classification",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "format_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "classification_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"CompressionType": {
+	"entity": "CompressionType",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "CompressionTypes",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "CompressionType",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "compression_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "compressionType_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "compressionType_Lossiness",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "Lossiness",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "CompressionType",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "CompressionType",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "compression_types_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "compressionType_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "compressionType_Lossiness",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "Lossiness",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ContainerFile": {
+	"entity": "ContainerFile",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ContainerFiles",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ContainerFile",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "filePath",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerFile_ByteSequence",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerFile_ContainerSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ContainerFile",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ContainerFile",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "filePath",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "containerFile_ByteSequence",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "containerFile_ContainerSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ContainerSignature": {
+	"entity": "ContainerSignature",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ContainerSignatures",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ContainerSignature",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerSignature_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerSignature_ContainerFile",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerFile",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerSignature_ContainerType",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerType",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerSignature_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 6,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ContainerSignature",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ContainerSignature",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "containerSignature_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "containerSignature_ContainerFile",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerFile",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "containerSignature_ContainerType",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerType",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "containerSignature_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 6,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ContainerType": {
+	"entity": "ContainerType",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ContainerTypes",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ContainerType",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerType_ContainerSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 3,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "containerType_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ContainerType",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ContainerType",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "containerType_ContainerSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 3,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "containerType_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"ExternalSignature": {
+	"entity": "ExternalSignature",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "ExternalSignatures",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "ExternalSignature",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "extension",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "external_signatures_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "externalSignature_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "ExternalSignature",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "ExternalSignature",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "extension",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "external_signatures_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "externalSignature_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"Family": {
+	"entity": "Family",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "Familys",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "Family",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "Family",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "Family",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			]
+		}
+	}
+	,
+	"FileFormat": {
+	"entity": "FileFormat",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "FileFormats",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "FileFormat",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": false,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "file_formats_ID",
+				"propertyVisible": false,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "puid",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "version",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 5,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_ByteOrder",
+				"propertyVisible": false,
+				"propertyType": "O",
+				"propertyRange": "ByteOrder",
+				"ordinal": 6,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "canBeContainedBy",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 7,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "contains",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 8,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "equivalent",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 9,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_Classification",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "Classification",
+				"ordinal": 10,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_CompressionType",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "CompressionType",
+				"ordinal": 11,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_ContainerSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 12,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_ContainerType",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ContainerType",
+				"ordinal": 13,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_ExternalSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ExternalSignature",
+				"ordinal": 14,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_FileFormatFamily",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormatFamily",
+				"ordinal": 15,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_FormatIdentifier",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FormatIdentifier",
+				"ordinal": 16,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormat_InternalSignature",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "InternalSignature",
+				"ordinal": 17,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "hasPriorityOver",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 18,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "isLowerPriorityThan",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 19,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "isSuperTypeOf",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 20,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "priorVersion",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 21,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "subTypeOf",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 22,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "subsequentVersion",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 23,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "FileFormat",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "FileFormat",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": false,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "file_formats_ID",
+				"propertyVisible": false,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "puid",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "version",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 5,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "fileFormat_ByteOrder",
+				"propertyVisible": true,
+				"propertyType": "O",
+				"propertyRange": "ByteOrder",
+				"ordinal": 6,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "canBeContainedBy",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 7,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "contains",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 8,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "equivalent",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 9,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_Classification",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "Classification",
+				"ordinal": 10,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_CompressionType",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "CompressionType",
+				"ordinal": 11,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_ContainerSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerSignature",
+				"ordinal": 12,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_ContainerType",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ContainerType",
+				"ordinal": 13,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_ExternalSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ExternalSignature",
+				"ordinal": 14,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_FileFormatFamily",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormatFamily",
+				"ordinal": 15,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_FormatIdentifier",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FormatIdentifier",
+				"ordinal": 16,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "fileFormat_InternalSignature",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "InternalSignature",
+				"ordinal": 17,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "hasPriorityOver",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 18,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "isLowerPriorityThan",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 19,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "isSuperTypeOf",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 20,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "priorVersion",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 21,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "subTypeOf",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 22,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "subsequentVersion",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 23,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"FileFormatFamily": {
+	"entity": "FileFormatFamily",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "FileFormatFamilys",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "FileFormatFamily",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "format_families_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "fileFormatFamily_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "FileFormatFamily",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "FileFormatFamily",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "format_families_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "fileFormatFamily_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 4,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"FormatIdentifier": {
+	"entity": "FormatIdentifier",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "FormatIdentifiers",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "FormatIdentifier",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "format_identifiers_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "formatIdentifier_FormatRegistry",
+				"propertyVisible": false,
+				"propertyType": "O",
+				"propertyRange": "FormatRegistry",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "formatIdentifier_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "FormatIdentifier",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "FormatIdentifier",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "format_identifiers_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "formatIdentifier_FormatRegistry",
+				"propertyVisible": true,
+				"propertyType": "O",
+				"propertyRange": "FormatRegistry",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "formatIdentifier_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"FormatRegistry": {
+	"entity": "FormatRegistry",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "FormatRegistrys",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "FormatRegistry",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "formatRegistry_FormatIdentifier",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FormatIdentifier",
+				"ordinal": 3,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "FormatRegistry",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "FormatRegistry",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "formatRegistry_FormatIdentifier",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FormatIdentifier",
+				"ordinal": 3,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"InternalSignature": {
+	"entity": "InternalSignature",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "InternalSignatures",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "InternalSignature",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "internal_signatures_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "sequence",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "internalSignature_ByteSequence",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 5,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "internalSignature_FileFormat",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 6,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "InternalSignature",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "InternalSignature",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "internal_signatures_ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.Int32",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 3,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "sequence",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 4,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "internalSignature_ByteSequence",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "ByteSequence",
+				"ordinal": 5,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			,{ 
+				"property": "internalSignature_FileFormat",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "FileFormat",
+				"ordinal": 6,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"Lossiness": {
+	"entity": "Lossiness",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "Lossinesss",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "Lossiness",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "lossiness_CompressionType",
+				"propertyVisible": false,
+				"propertyType": "C",
+				"propertyRange": "CompressionType",
+				"ordinal": 3,
+				"aggregate": "[Count]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "Lossiness",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "Lossiness",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "lossiness_CompressionType",
+				"propertyVisible": true,
+				"propertyType": "C",
+				"propertyRange": "CompressionType",
+				"ordinal": 3,
+				"aggregate": "[List]",
+				"formatOptions": null,
+				"allowEdit": true,
+				"height":"4rem"
+			}
+			]
+		}
+	}
+	,
+	"Signature": {
+	"entity": "Signature",
+	"icon": "sap-icon://group-2",
+	"image": "./images/icons/unknown.svg",
+	"entitySetVisible":true,
+	"grid": {
+		"target": "Signatures",
+		"gridStyle":"entitySetTable",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://group-2",
+		"targetEntity": "Signature",	
+		"properties": [	
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": ""
+			}	
+			]
+		},
+	"form": {
+		"target": "Signature",
+		"formStyle":"entity360",
+		"targetVisible": true,
+		"targetIcon": "sap-icon://expand-group",
+		"targetEntity": "Signature",
+		"allowEdit" : true,
+		"properties": [		
+			{  
+				"property": "ID",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 0,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "comment",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 1,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			,{ 
+				"property": "seeExternal",
+				"propertyVisible": true,
+				"propertyType": "D",
+				"propertyRange": "Edm.String",
+				"ordinal": 2,
+				"aggregate": "[]",
+				"formatOptions": null,
+				"allowEdit": true
+			}
+			]
+		}
+	}
+}

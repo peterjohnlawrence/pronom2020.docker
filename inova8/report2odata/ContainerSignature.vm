@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContainerSignatureMapping Version='$this.getReportOption("version")'  DateCreated="$this.isoDateTimeNow()" >
+    <ContainerSignatures>
+        $this.queryTransformer(
+            "http://localhost:8080/odata2sparql/pronom2020/
+			ContainerSignature?
+			$select=label,comment,containerSignature_ID
+			&$expand=
+				containerSignature_ContainerType(
+					$select=label)
+			,	containerSignature_ContainerFile(
+					$select=containerFile_FilePath;
+					$expand=containerFile_ByteSequence(
+						$select=internalSignature_ID,byteSequence_Position,byteSequence_IndirectOffsetLength,byteSequence_IndirectOffsetLocation,byteSequence_MaxOffset,byteSequence_Offset,byteSequence_Value;
+						$expand=byteSequence_ByteSequencePosition(
+						$select=label)))
+			&$format=application/json;odata.metadata=minimal",
+            "ContainerSignatures.xsl"
+            )
+    </ContainerSignatures>
+    <FileFormatMappings>
+        $this.queryTransformer("http://localhost:8080/odata2sparql/pronom2020/
+        ContainerSignature?
+			$select=
+				label,
+				comment,
+				containerSignature_ID
+			&$expand=containerSignature_FileFormat(
+				$select=
+					registry_puid)
+        &$format=application/json;odata.metadata=minimal",
+        "FileFormatMappings.xsl"
+        )       
+    </FileFormatMappings>
+    <TriggerPuids>
+        $this.queryTransformer("http://localhost:8080/odata2sparql/pronom2020/
+        ContainerType?
+			$select=
+				label
+			&$expand=
+				containerType_FileFormat(
+				$select=
+					registry_puid)
+        &$format=application/json;odata.metadata=minimal",
+        "TriggerPuids.xsl"
+        )        
+    </TriggerPuids>
+</ContainerSignatureMapping>

@@ -1,0 +1,1303 @@
+{
+	"northwind": {
+		"searches": [
+			{
+				"search": "isabel"
+			},
+			{
+				"search": "isabel AND portugal"
+			},
+			{
+				"search": "isabel LINKEDTO portugal"
+			},
+			{
+				"search": "Geitost"
+			},
+			{
+				"search": "(5) 555-3932"
+			},
+			{
+				"search": "(5) 555-3932 AND Geitost"
+			},
+			{
+				"search": "(5) 555-3932 LINKEDTO Geitost"
+			},
+			{
+				"search": "Sweet and savory sauces, relishes, spreads, and seasonings"
+			},
+			{
+				"search": "Sweet AND savory sauces, relishes, spreads, and seasonings"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"knowledgeWalks": {
+			"employees": {
+				"walk": "employees",
+				"graphCrumbs": {
+					"type": "branches",
+					"branches": [
+						{
+							"type": "branch",
+							"branch": [
+								{
+									"type": "link",
+									"text": "Employee/instances Of",
+									"hash": "Employees/Employee",
+									"arguments": {
+										"entitySet": "Employee",
+										"graphCrumb": "Employee/instances Of",
+										"mode": "es"
+									},
+									"target": "Employees",
+									"parameters": {
+										"objectId": "Employee"
+									}
+								},
+								{
+									"type": "link",
+									"text": "NWD~Employee-8",
+									"hash": "Employee/Employee('NWD~Employee-8')",
+									"arguments": {
+										"subjectId": "NWD~Employee-8",
+										"graphCrumb": "NWD~Employee-8",
+										"mode": "e"
+									},
+									"target": "Employee",
+									"parameters": {
+										"objectId": "Employee('NWD~Employee-8')"
+									}
+								},
+								{
+									"type": "link",
+									"text": "managesOrder/NWD~Order-10262",
+									"hash": "Order/Order('NWD~Order-10262')//?navigated=managesOrder&navigatedCount=104&navigatedSource=Employee('NWD~Employee-8')",
+									"arguments": {
+										"navigated": "managesOrder",
+										"navigatedCount": 104,
+										"navigatedSource": "Employee('NWD~Employee-8')",
+										"subjectId": "NWD~Order-10262",
+										"navigatedLabel": "managesOrder",
+										"graphCrumb": "managesOrder/NWD~Order-10262",
+										"mode": "ne"
+									},
+									"target": "Order",
+									"parameters": {
+										"objectId": "Order('NWD~Order-10262')",
+										"?queryOptions": {
+											"navigated": "managesOrder",
+											"navigatedSource": "Employee('NWD~Employee-8')",
+											"navigatedCount": 104
+										},
+										"queryOptions": {
+											"navigated": "managesOrder",
+											"navigatedSource": "Employee('NWD~Employee-8')",
+											"navigatedCount": 104
+										}
+									}
+								},
+								{
+									"type": "link",
+									"text": "hasOrderDetail/NWD~OrderDetail-10262-5",
+									"hash": "OrderDetail/OrderDetail('NWD~OrderDetail-10262-5')//?navigated=hasOrderDetail&navigatedCount=3&navigatedSource=Order('NWD~Order-10262')",
+									"arguments": {
+										"navigated": "hasOrderDetail",
+										"navigatedCount": 3,
+										"navigatedSource": "Order('NWD~Order-10262')",
+										"subjectId": "NWD~OrderDetail-10262-5",
+										"navigatedLabel": "hasOrderDetail",
+										"graphCrumb": "hasOrderDetail/NWD~OrderDetail-10262-5",
+										"mode": "ne"
+									},
+									"target": "OrderDetail",
+									"parameters": {
+										"objectId": "OrderDetail('NWD~OrderDetail-10262-5')",
+										"?queryOptions": {
+											"navigated": "hasOrderDetail",
+											"navigatedSource": "Order('NWD~Order-10262')",
+											"navigatedCount": 3
+										},
+										"queryOptions": {
+											"navigated": "hasOrderDetail",
+											"navigatedSource": "Order('NWD~Order-10262')",
+											"navigatedCount": 3
+										}
+									}
+								},
+								{
+									"type": "link",
+									"text": "product/NWD~Product-5",
+									"hash": "Product/Product('NWD~Product-5')//?navigated=product&navigatedCount=undefined&navigatedSource=OrderDetail('NWD~OrderDetail-10262-5')",
+									"arguments": {
+										"navigated": "product",
+										"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')",
+										"subjectId": "NWD~Product-5",
+										"navigatedLabel": "product",
+										"graphCrumb": "product/NWD~Product-5",
+										"mode": "ne"
+									},
+									"target": "Product",
+									"parameters": {
+										"objectId": "Product('NWD~Product-5')",
+										"?queryOptions": {
+											"navigated": "product",
+											"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')"
+										},
+										"queryOptions": {
+											"navigated": "product",
+											"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')"
+										}
+									},
+									"current": true
+								}
+							]
+						}
+					]
+				}
+			},
+			"empty": {
+				"walk": "empty",
+				"graphCrumbs": {
+					"type": "branches",
+					"branches": [
+					]
+				}
+			},
+			"test": {
+				"walk": "test",
+				"graphCrumbs": {
+					"type": "branches",
+					"branches": [
+						{
+							"type": "branch",
+							"branch": [
+								{
+									"type": "link",
+									"text": "Employee/instances Of",
+									"hash": "Employees/Employee",
+									"arguments": {
+										"entitySet": "Employee",
+										"graphCrumb": "Employee/instances Of",
+										"mode": "es"
+									},
+									"target": "Employees",
+									"parameters": {
+										"objectId": "Employee"
+									}
+								},
+								{
+									"type": "link",
+									"text": "NWD~Employee-8",
+									"hash": "Employee/Employee('NWD~Employee-8')",
+									"arguments": {
+										"subjectId": "NWD~Employee-8",
+										"graphCrumb": "NWD~Employee-8",
+										"mode": "e"
+									},
+									"target": "Employee",
+									"parameters": {
+										"objectId": "Employee('NWD~Employee-8')"
+									}
+								},
+								{
+									"type": "link",
+									"text": "managesOrder/NWD~Order-10262",
+									"hash": "Order/Order('NWD~Order-10262')//?navigated=managesOrder&navigatedCount=104&navigatedSource=Employee('NWD~Employee-8')",
+									"arguments": {
+										"navigated": "managesOrder",
+										"navigatedCount": 104,
+										"navigatedSource": "Employee('NWD~Employee-8')",
+										"subjectId": "NWD~Order-10262",
+										"navigatedLabel": "managesOrder",
+										"graphCrumb": "managesOrder/NWD~Order-10262",
+										"mode": "ne"
+									},
+									"target": "Order",
+									"parameters": {
+										"objectId": "Order('NWD~Order-10262')",
+										"?queryOptions": {
+											"navigated": "managesOrder",
+											"navigatedSource": "Employee('NWD~Employee-8')",
+											"navigatedCount": 104
+										},
+										"queryOptions": {
+											"navigated": "managesOrder",
+											"navigatedSource": "Employee('NWD~Employee-8')",
+											"navigatedCount": 104
+										}
+									}
+								},
+								{
+									"type": "link",
+									"text": "hasOrderDetail/NWD~OrderDetail-10262-5",
+									"hash": "OrderDetail/OrderDetail('NWD~OrderDetail-10262-5')//?navigated=hasOrderDetail&navigatedCount=3&navigatedSource=Order('NWD~Order-10262')",
+									"arguments": {
+										"navigated": "hasOrderDetail",
+										"navigatedCount": 3,
+										"navigatedSource": "Order('NWD~Order-10262')",
+										"subjectId": "NWD~OrderDetail-10262-5",
+										"navigatedLabel": "hasOrderDetail",
+										"graphCrumb": "hasOrderDetail/NWD~OrderDetail-10262-5",
+										"mode": "ne"
+									},
+									"target": "OrderDetail",
+									"parameters": {
+										"objectId": "OrderDetail('NWD~OrderDetail-10262-5')",
+										"?queryOptions": {
+											"navigated": "hasOrderDetail",
+											"navigatedSource": "Order('NWD~Order-10262')",
+											"navigatedCount": 3
+										},
+										"queryOptions": {
+											"navigated": "hasOrderDetail",
+											"navigatedSource": "Order('NWD~Order-10262')",
+											"navigatedCount": 3
+										}
+									}
+								},
+								{
+									"type": "link",
+									"text": "product/NWD~Product-5",
+									"hash": "Product/Product('NWD~Product-5')//?navigated=product&navigatedCount=undefined&navigatedSource=OrderDetail('NWD~OrderDetail-10262-5')",
+									"arguments": {
+										"navigated": "product",
+										"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')",
+										"subjectId": "NWD~Product-5",
+										"navigatedLabel": "product",
+										"graphCrumb": "product/NWD~Product-5",
+										"mode": "ne"
+									},
+									"target": "Product",
+									"parameters": {
+										"objectId": "Product('NWD~Product-5')",
+										"?queryOptions": {
+											"navigated": "product",
+											"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')"
+										},
+										"queryOptions": {
+											"navigated": "product",
+											"navigatedSource": "OrderDetail('NWD~OrderDetail-10262-5')"
+										}
+									},
+									"current": true
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"queries": {
+		},
+		"groupRules": {
+			"rules": [
+				{
+					"ruleName": "byCity",
+					"type": "node",
+					"active": false,
+					"expanded": [
+					],
+					"rules": [
+						{
+							"type": "property",
+							"@odata_type": "Employee",
+							"property": "employeeCity"
+						},
+						{
+							"type": "property",
+							"@odata_type": "Order",
+							"property": "shipCity"
+						}
+					]
+				},
+				{
+					"ruleName": "byCountry",
+					"type": "node",
+					"active": false,
+					"expanded": [
+					],
+					"rules": [
+						{
+							"type": "property",
+							"@odata_type": "Employee",
+							"property": "employeeCountry"
+						},
+						{
+							"type": "property",
+							"@odata_type": "Order",
+							"property": "shipCountry"
+						}
+					]
+				},
+				{
+					"ruleName": "byEmployeeManaged",
+					"type": "link",
+					"active": false,
+					"expanded": [
+					],
+					"rules": [
+						{
+							"type": "navigationProperty",
+							"@odata_type": "Employee",
+							"navigationProperty": "managesEmployee"
+						}
+					]
+				},
+				{
+					"ruleName": "byManaged",
+					"type": "link",
+					"active": false,
+					"expanded": [
+					],
+					"rules": [
+						{
+							"type": "navigationProperty",
+							"@odata_type": "Employee",
+							"navigationProperty": "managesEmployee"
+						},
+						{
+							"type": "navigationProperty",
+							"@odata_type": "Employee",
+							"navigationProperty": "managesOrder"
+						}
+					]
+				}
+			]
+		},
+		"filterRules": [
+			{
+				"name": "Employee/hireDate",
+				"active": false,
+				"@odata_type": "Employee",
+				"property": "hireDate",
+				"condition": " < 2018-08-01T23:00:00Z"
+			},
+			{
+				"name": "Employee/longitude",
+				"active": false,
+				"@odata_type": "Employee",
+				"property": "longitude",
+				"condition": " > -30.0"
+			},
+			{
+				"name": "Order/orderDate",
+				"active": false,
+				"@odata_type": "Order",
+				"property": "orderDate",
+				"condition": " > 2018-08-01T23:00:00Z"
+			},
+			{
+				"name": "Order/freight",
+				"active": false,
+				"@odata_type": "Order",
+				"property": "freight",
+				"condition": "> 25.00"
+			}
+		],
+		"appearanceRules": [
+		]
+	},
+	"NHS": {
+		"searches": [
+			{
+				"search": "Tideswell"
+			},
+			{
+				"search": "Sheffield"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type",
+				"NHS~Nurse_Prescriber.Current_Care_Organisation_Code",
+				"NHS~General_Practitioner.Current_Care_Organisation",
+				"NHS~Clinical_Commissioning_Group.Organisation_Sub-Type_Code",
+				"NHS~Independent_Provider.Organisation_Sub-Type_Code",
+				"NHS~General_Practitioner.Organisation_Sub-Type_Code",
+				"NHS~GP_Practice.Status_Code",
+				"NHS~General_Practitioner.Status_Code",
+				"NHS~Clinical_Commissioning_Group_Site.Amended_Record_Indicator",
+				"NHS~Independent_Provider.Amended_Record_Indicator",
+				"NHS~GP_Practice.Amended_Record_Indicator",
+				"NHS~General_Practitioner.Amended_Record_Indicator",
+				"NHS~Dispensary.Amended_Record_Indicator",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator",
+				"NHS~General_Dental_Practice.Amended_Record_Indicator",
+				"NHS~General_Dental_Practitioner.Amended_Record_Indicator",
+				"NHS~Clinical_Commisioning_Group.Amended_Record_Indicator",
+				"NHS~Geographical_Region.Amended_Record_Indicator",
+				"NHS~Independant_Healthcare_Provider.Amended_Record_Indicator",
+				"NHS~Independant_Healthcare_Provider_Site.Amended_Record_Indicator",
+				"NHS~Independant_Provider.Amended_Record_Indicator",
+				"NHS~NHS_Care_Trust.Amended_Record_Indicator",
+				"NHS~NHS_Care.Amended_Record_Indicator",
+				"NHS~NHS_Trust.Amended_Record_Indicator",
+				"NHS~NHS_Trust_Site.Amended_Record_Indicator",
+				"NHS~Pharmacy_Headquarters_Organization.Amended_Record_Indicator",
+				"NHS~Practice_Membership.Amended_Record_Indicator",
+				"NHS~Primary_Care_Trust.Amended_Record_Indicator",
+				"NHS~Primary_Care_Trust_Site.Amended_Record_Indicator",
+				"NHS~Clinical_Commissioning_Group.Amended_Record_Indicator",
+				"NHS~Dispensary.Amended_Record_Indicator",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator",
+				"NHS~GP_Practice_Group.Amended_Record_Indicator",
+				"NHS~General_Dental_Practitioner_Membership.Amended_Record_Indicator",
+				"NHS~General_Practitioner_Membership.Amended_Record_Indicator",
+				"NHS~Private_Controlled_Drug_Prescriber.Amended_Record_Indicator",
+				"NHS~General_Practitioner.Amended_Record_Indicator.inverse",
+				"NHS~Dispensary.Amended_Record_Indicator.inverse",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practice.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practitioner.Amended_Record_Indicator.inverse",
+				"NHS~Clinical_Commisioning_Group.Amended_Record_Indicator.inverse",
+				"NHS~Geographical_Region.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Healthcare_Provider.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Healthcare_Provider_Site.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Provider.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Care_Trust.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Care.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Trust.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Trust_Site.Amended_Record_Indicator.inverse",
+				"NHS~Pharmacy_Headquarters_Organization.Amended_Record_Indicator.inverse",
+				"NHS~Practice_Membership.Amended_Record_Indicator.inverse",
+				"NHS~Primary_Care_Trust.Amended_Record_Indicator.inverse",
+				"NHS~Primary_Care_Trust_Site.Amended_Record_Indicator.inverse",
+				"NHS~Clinical_Commissioning_Group.Amended_Record_Indicator.inverse",
+				"NHS~Dispensary.Amended_Record_Indicator.inverse",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator.inverse",
+				"NHS~GP_Practice_Group.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practitioner_Membership.Amended_Record_Indicator.inverse",
+				"NHS~General_Practitioner_Membership.Amended_Record_Indicator.inverse",
+				"NHS~Private_Controlled_Drug_Prescriber.Amended_Record_Indicator.inverse"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type",
+				"NHS~Nurse_Prescriber.Current_Care_Organisation_Code",
+				"NHS~General_Practitioner.Current_Care_Organisation",
+				"NHS~Clinical_Commissioning_Group.Organisation_Sub-Type_Code",
+				"NHS~Independent_Provider.Organisation_Sub-Type_Code",
+				"NHS~General_Practitioner.Organisation_Sub-Type_Code",
+				"NHS~GP_Practice.Status_Code",
+				"NHS~General_Practitioner.Status_Code",
+				"NHS~Clinical_Commissioning_Group_Site.Amended_Record_Indicator",
+				"NHS~Independent_Provider.Amended_Record_Indicator",
+				"NHS~GP_Practice.Amended_Record_Indicator",
+				"NHS~General_Practitioner.Amended_Record_Indicator",
+				"NHS~Dispensary.Amended_Record_Indicator",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator",
+				"NHS~General_Dental_Practice.Amended_Record_Indicator",
+				"NHS~General_Dental_Practitioner.Amended_Record_Indicator",
+				"NHS~Clinical_Commisioning_Group.Amended_Record_Indicator",
+				"NHS~Geographical_Region.Amended_Record_Indicator",
+				"NHS~Independant_Healthcare_Provider.Amended_Record_Indicator",
+				"NHS~Independant_Healthcare_Provider_Site.Amended_Record_Indicator",
+				"NHS~Independant_Provider.Amended_Record_Indicator",
+				"NHS~NHS_Care_Trust.Amended_Record_Indicator",
+				"NHS~NHS_Care.Amended_Record_Indicator",
+				"NHS~NHS_Trust.Amended_Record_Indicator",
+				"NHS~NHS_Trust_Site.Amended_Record_Indicator",
+				"NHS~Pharmacy_Headquarters_Organization.Amended_Record_Indicator",
+				"NHS~Practice_Membership.Amended_Record_Indicator",
+				"NHS~Primary_Care_Trust.Amended_Record_Indicator",
+				"NHS~Primary_Care_Trust_Site.Amended_Record_Indicator",
+				"NHS~Clinical_Commissioning_Group.Amended_Record_Indicator",
+				"NHS~Dispensary.Amended_Record_Indicator",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator",
+				"NHS~GP_Practice_Group.Amended_Record_Indicator",
+				"NHS~General_Dental_Practitioner_Membership.Amended_Record_Indicator",
+				"NHS~General_Practitioner_Membership.Amended_Record_Indicator",
+				"NHS~Private_Controlled_Drug_Prescriber.Amended_Record_Indicator",
+				"NHS~General_Practitioner.Amended_Record_Indicator.inverse",
+				"NHS~Dispensary.Amended_Record_Indicator.inverse",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practice.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practitioner.Amended_Record_Indicator.inverse",
+				"NHS~Clinical_Commisioning_Group.Amended_Record_Indicator.inverse",
+				"NHS~Geographical_Region.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Healthcare_Provider.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Healthcare_Provider_Site.Amended_Record_Indicator.inverse",
+				"NHS~Independant_Provider.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Care_Trust.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Care.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Trust.Amended_Record_Indicator.inverse",
+				"NHS~NHS_Trust_Site.Amended_Record_Indicator.inverse",
+				"NHS~Pharmacy_Headquarters_Organization.Amended_Record_Indicator.inverse",
+				"NHS~Practice_Membership.Amended_Record_Indicator.inverse",
+				"NHS~Primary_Care_Trust.Amended_Record_Indicator.inverse",
+				"NHS~Primary_Care_Trust_Site.Amended_Record_Indicator.inverse",
+				"NHS~Clinical_Commissioning_Group.Amended_Record_Indicator.inverse",
+				"NHS~Dispensary.Amended_Record_Indicator.inverse",
+				"NHS~GP_Branch_Surgery.Amended_Record_Indicator.inverse",
+				"NHS~GP_Practice_Group.Amended_Record_Indicator.inverse",
+				"NHS~General_Dental_Practitioner_Membership.Amended_Record_Indicator.inverse",
+				"NHS~General_Practitioner_Membership.Amended_Record_Indicator.inverse",
+				"NHS~Private_Controlled_Drug_Prescriber.Amended_Record_Indicator.inverse"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		}
+	},
+	"Customer360": {
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		}
+	},
+	"tfl": {
+		"searches": [
+			{
+				"search": "baker"
+			},
+			{
+				"search": "mornington"
+			},
+			{
+				"search": "oakleigh"
+			},
+			{
+				"search": "mornington AND baker"
+			},
+			{
+				"search": "mornington LINKEDTO baker"
+			},
+			{
+				"search": "oakleigh LINKEDTO baker"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+				"tfl~connectsFrom"
+			],
+			"edgePropertyExclude": [
+				"rdf~type",
+				"tfl~connectsTo"
+			],
+			"inverseEdgePropertyInclude": "",
+			"inverseEdgePropertyExclude": [
+				"rdf~type",
+				"tfl~hasStationInZone",
+				"tfl~hasStationOnLine",
+				"tfl~connectsFrom"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"knowledgeWalks": {
+			"test": {
+				"walk": "test",
+				"graphCrumbs": {
+					"type": "branches",
+					"branches": [
+						{
+							"type": "branch",
+							"branch": [
+								{
+									"type": "link",
+									"text": "_AdvancedSearch?search=oakleigh LINKEDTO baker",
+									"hash": "_AdvancedSearch?search=oakleigh LINKEDTO baker",
+									"arguments": {
+										"entitySet": "_AdvancedSearch",
+										"mode": "ls",
+										"graphCrumb": "_AdvancedSearch?search=oakleigh LINKEDTO baker"
+									},
+									"target": "_AdvancedSearch",
+									"parameters": {
+										"?queryOptions": {
+											"search": "oakleigh LINKEDTO baker",
+											"mode": "ls"
+										}
+									}
+								},
+								{
+									"type": "link",
+									"hash": "_PathAdvancedSearch/TubeStation('londontube~Oakleigh_Park')/TubeStation('londontube~Baker_Street')?search=oakleigh LINKEDTO baker",
+									"arguments": {
+										"search": "oakleigh LINKEDTO baker",
+										"startSubjectId": "londontube~Oakleigh_Park",
+										"startEntitySet": "TubeStation",
+										"endSubjectId": "londontube~Baker_Street",
+										"endEntitySet": "TubeStation",
+										"mode": "ap"
+									},
+									"target": "_PathAdvancedSearch",
+									"parameters": {
+										"startObjectId": "TubeStation('londontube~Oakleigh_Park')",
+										"endObjectId": "TubeStation('londontube~Baker_Street')",
+										"?queryOptions": {
+											"search": "oakleigh LINKEDTO baker",
+											"mode": "ap"
+										},
+										"queryOptions": {
+											"search": "oakleigh LINKEDTO baker",
+											"mode": "ap"
+										}
+									}
+								},
+								{
+									"type": "link",
+									"text": "londontube~Baker_Street/connectsFrom",
+									"hash": "TubeStations/TubeStation('londontube~Baker_Street')/connectsFrom/?navigationCount=4",
+									"arguments": {
+										"navigation": "connectsFrom",
+										"navigationCount": 4,
+										"subjectId": "londontube~Baker_Street",
+										"entitySet": "TubeStation",
+										"navigationLabel": "Connects From",
+										"graphCrumb": "londontube~Baker_Street/connectsFrom",
+										"mode": "ens"
+									},
+									"target": "TubeStations",
+									"parameters": {
+										"navigation": "connectsFrom",
+										"?queryOptions": {
+											"navigationCount": 4
+										},
+										"objectId": "TubeStation('londontube~Baker_Street')",
+										"queryOptions": {
+											"navigationCount": 4
+										}
+									},
+									"columns": {
+										"settings": [
+											{
+												"index": 0,
+												"id": "__column5",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 1,
+												"id": "__component0---TubeStations--lat",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 2,
+												"id": "__component0---TubeStations--long",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 3,
+												"id": "__component0---TubeStations--osx",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 4,
+												"id": "__component0---TubeStations--osy",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 5,
+												"id": "__component0---TubeStations--postcode",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 6,
+												"id": "__component0---TubeStations--connectsFrom",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 7,
+												"id": "__component0---TubeStations--connectsTo",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 8,
+												"id": "__component0---TubeStations--inZone",
+												"sorted": false,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											},
+											{
+												"index": 9,
+												"id": "__component0---TubeStations--onLine",
+												"sorted": true,
+												"sortOrder": "Ascending",
+												"filterValue": "",
+												"filtered": false,
+												"visible": true
+											}
+										],
+										"filtered": false,
+										"aFilters": [
+										],
+										"aApplicationFilters": [
+										]
+									}
+								},
+								{
+									"type": "branches",
+									"branches": [
+										{
+											"type": "branch",
+											"branch": [
+												{
+													"type": "link",
+													"text": "londontube~Marylebone/inZone",
+													"hash": "Zones/TubeStation('londontube~Marylebone')/inZone/?navigationCount=1",
+													"arguments": {
+														"navigation": "inZone",
+														"navigationCount": 1,
+														"subjectId": "londontube~Marylebone",
+														"entitySet": "TubeStation",
+														"navigationLabel": "In Zone",
+														"graphCrumb": "londontube~Marylebone/inZone",
+														"mode": "ens"
+													},
+													"target": "Zones",
+													"parameters": {
+														"navigation": "inZone",
+														"objectId": "TubeStation('londontube~St._Johns_Wood')",
+														"default": "Zones",
+														"?queryOptions": {
+															"navigationCount": 1
+														},
+														"queryOptions": {
+															"navigationCount": 1
+														}
+													},
+													"columns": {
+														"settings": [
+															{
+																"index": 0,
+																"id": "__column6",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 1,
+																"id": "__component0---Zones--hasStationInZone",
+																"sorted": true,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															}
+														],
+														"filtered": false,
+														"aFilters": [
+														],
+														"aApplicationFilters": [
+														]
+													}
+												}
+											]
+										},
+										{
+											"type": "branch",
+											"branch": [
+												{
+													"type": "link",
+													"text": "londontube~St._Johns_Wood/inZone",
+													"hash": "Zones/TubeStation('londontube~St._Johns_Wood')/inZone/?navigationCount=1",
+													"arguments": {
+														"navigation": "inZone",
+														"navigationCount": 1,
+														"subjectId": "londontube~St._Johns_Wood",
+														"entitySet": "TubeStation",
+														"navigationLabel": "In Zone",
+														"graphCrumb": "londontube~St._Johns_Wood/inZone",
+														"mode": "ens"
+													},
+													"target": "Zones",
+													"parameters": {
+														"navigation": "inZone",
+														"objectId": "TubeStation('londontube~St._Johns_Wood')",
+														"default": "Zones",
+														"?queryOptions": {
+															"navigationCount": 1
+														},
+														"queryOptions": {
+															"navigationCount": 1
+														}
+													},
+													"columns": {
+														"settings": [
+															{
+																"index": 0,
+																"id": "__column6",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 1,
+																"id": "__component0---Zones--hasStationInZone",
+																"sorted": true,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															}
+														],
+														"filtered": false,
+														"aFilters": [
+														],
+														"aApplicationFilters": [
+														]
+													},
+													"current": true
+												}
+											]
+										},
+										{
+											"type": "branch",
+											"branch": [
+												{
+													"type": "link",
+													"text": "londontube~Great_Portland_Street/connectsFrom",
+													"hash": "TubeStations/TubeStation('londontube~Great_Portland_Street')/connectsFrom/?navigationCount=2",
+													"arguments": {
+														"navigation": "connectsFrom",
+														"navigationCount": 2,
+														"subjectId": "londontube~Great_Portland_Street",
+														"entitySet": "TubeStation",
+														"navigationLabel": "Connects From",
+														"graphCrumb": "londontube~Great_Portland_Street/connectsFrom",
+														"mode": "ens"
+													},
+													"target": "TubeStations",
+													"parameters": {
+														"navigation": "connectsFrom",
+														"objectId": "TubeStation('londontube~Great_Portland_Street')",
+														"default": "TubeStations",
+														"?queryOptions": {
+															"navigationCount": 2
+														},
+														"queryOptions": {
+															"navigationCount": 2
+														}
+													},
+													"columns": {
+														"settings": [
+															{
+																"index": 0,
+																"id": "__column5",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 1,
+																"id": "__component0---TubeStations--lat",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 2,
+																"id": "__component0---TubeStations--long",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 3,
+																"id": "__component0---TubeStations--osx",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 4,
+																"id": "__component0---TubeStations--osy",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 5,
+																"id": "__component0---TubeStations--postcode",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "5LA",
+																"filtered": true,
+																"visible": true
+															},
+															{
+																"index": 6,
+																"id": "__component0---TubeStations--connectsFrom",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 7,
+																"id": "__component0---TubeStations--connectsTo",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 8,
+																"id": "__component0---TubeStations--inZone",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 9,
+																"id": "__component0---TubeStations--onLine",
+																"sorted": true,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															}
+														],
+														"filtered": true,
+														"aFilters": [
+															{
+																"sPath": "postcode",
+																"sOperator": "Contains",
+																"oValue1": "5LA",
+																"_bMultiFilter": false
+															}
+														],
+														"aApplicationFilters": [
+														]
+													}
+												},
+												{
+													"type": "link",
+													"text": "londontube~Baker_Street/onLine",
+													"hash": "TubeLines/TubeStation('londontube~Baker_Street')/onLine/?navigationCount=5",
+													"arguments": {
+														"navigation": "onLine",
+														"navigationCount": 5,
+														"subjectId": "londontube~Baker_Street",
+														"entitySet": "TubeStation",
+														"navigationLabel": "On Line",
+														"graphCrumb": "londontube~Baker_Street/onLine",
+														"mode": "ens"
+													},
+													"target": "TubeLines",
+													"parameters": {
+														"objectId": "TubeStation('londontube~Baker_Street')",
+														"navigation": "onLine",
+														"default": "TubeLines",
+														"?queryOptions": {
+															"navigationCount": 5
+														},
+														"queryOptions": {
+															"navigationCount": 5
+														}
+													},
+													"columns": {
+														"settings": [
+															{
+																"index": 0,
+																"id": "__column7",
+																"sorted": false,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															},
+															{
+																"index": 1,
+																"id": "__component0---TubeLines--hasStationOnLine",
+																"sorted": true,
+																"sortOrder": "Ascending",
+																"filterValue": "",
+																"filtered": false,
+																"visible": true
+															}
+														],
+														"filtered": false,
+														"aFilters": [
+														],
+														"aApplicationFilters": [
+														]
+													}
+												},
+												{
+													"type": "link",
+													"text": "londontube~Circle",
+													"hash": "TubeLine/TubeLine('londontube~Circle')//?navigated=onLine&navigatedCount=5&navigatedSource=TubeStation('londontube~Baker_Street')",
+													"arguments": {
+														"navigated": "onLine",
+														"navigatedCount": 5,
+														"navigatedSource": "TubeStation('londontube~Baker_Street')",
+														"subjectId": "londontube~Circle",
+														"entitySet": "TubeLine",
+														"navigatedLabel": "On Line",
+														"graphCrumb": "londontube~Circle",
+														"mode": "e"
+													},
+													"target": "TubeLine",
+													"parameters": {
+														"objectId": "TubeLine('londontube~Circle')",
+														"?queryOptions": {
+															"navigated": "onLine",
+															"navigatedSource": "TubeStation('londontube~Baker_Street')",
+															"navigatedCount": 5
+														},
+														"queryOptions": {
+															"navigated": "onLine",
+															"navigatedSource": "TubeStation('londontube~Baker_Street')",
+															"navigatedCount": 5
+														}
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"queries": {
+		},
+		"appearanceRules": [
+			{
+				"name": "TubeLine",
+				"active": false,
+				"@odata_type": "TubeLine",
+				"radius": {
+					"property": "NumberStationsOnLine",
+					"scale": 5,
+					"default": 1
+				},
+				"shape": "pentagon",
+				"color": "red"
+			}
+		]
+	},
+	"STW": {
+		"searches": [
+			{
+				"search": "household"
+			},
+			{
+				"search": "household AND private"
+			},
+			{
+				"search": "germany"
+			},
+			{
+				"search": "household AND private AND germany"
+			},
+			{
+				"search": "household AND private LINKEDTO germany"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"queries": {
+		}
+	},
+	"COFID": {
+		"searches": [
+			{
+				"search": "Pineapple"
+			},
+			{
+				"search": "Ham AND Pineapple"
+			},
+			{
+				"search": "Ham AND Pineapple AND homemade"
+			},
+			{
+				"search": "Ham AND Pineapple LINKEDTO homemade"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"queries": {
+		}
+	},
+	"FDA": {
+		"searches": [
+			{
+				"search": "Bisoprolol"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"queries": {
+		}
+	},
+	"CDISC": {
+		"searches": [
+			{
+				"search": "Ethnic"
+			},
+			{
+				"search": "Special AND Purpose"
+			},
+			{
+				"search": "DM"
+			},
+			{
+				"search": "C66790"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"queries": {
+		}
+	},
+	"Kennedys": {
+		"searches": [
+			{
+				"search": "arnold"
+			},
+			{
+				"search": "rose"
+			},
+			{
+				"search": "arnold AND rose"
+			},
+			{
+				"search": "arnold LINKEDTO rose"
+			}
+		],
+		"pathSettings": {
+			"edgePropertyInclude": [
+			],
+			"edgePropertyExclude": [
+				"rdf~type"
+			],
+			"inverseEdgePropertyInclude": [
+			],
+			"inverseEdgePropertyExclude": [
+				"rdf~type"
+			],
+			"bidirectional": true,
+			"maxPath": 20
+		},
+		"queries": {
+		}
+	}
+}
